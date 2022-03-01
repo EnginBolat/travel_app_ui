@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:travel_app_ui/models/swip_text.dart';
+import 'package:travel_app_ui/widget/getStartedButton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -72,30 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
           const SizedBox(
             height: 15,
           ),
-          SizedBox(
-            width: 250,
-            height: 50,
-            child: Directionality(
-              textDirection: TextDirection.rtl,
-              child: ElevatedButton.icon(
-                onPressed: () {
-                  print("clicked");
-                },
-                label: const Text(
-                  "Get Started",
-                  style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),
-                ),
-                icon: const Icon(FontAwesomeIcons.arrowRight, color: Colors.white,size: 22,),
-                style: ElevatedButton.styleFrom(
-                  elevation: 10,
-                  primary: Color.fromARGB(255, 240, 89, 34),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                ),
-              ),
-            ),
-          )
+          const GetStartedButton(),
         ],
       ),
     ) // This trailing comma makes auto-formatting nicer for build methods.
