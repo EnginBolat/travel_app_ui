@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:travel_app_ui/main.dart';
+import 'package:travel_app_ui/pages/home_page.dart';
 
 class GetStartedButton extends StatefulWidget {
   const GetStartedButton({Key? key}) : super(key: key);
@@ -17,9 +19,10 @@ class _GetStartedButtonState extends State<GetStartedButton> {
       child: Directionality(
         textDirection: TextDirection.rtl,
         child: ElevatedButton.icon(
-          onPressed: () {
-            print("clicked");
-          },
+          onPressed: () => Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const HomePage()),
+          ),
           label: const Text(
             "Get Started",
             style: TextStyle(
@@ -32,7 +35,8 @@ class _GetStartedButtonState extends State<GetStartedButton> {
           ),
           style: ElevatedButton.styleFrom(
             elevation: 10,
-            primary: Color.fromARGB(255, 240, 89, 34),
+            shadowColor: const Color.fromARGB(255, 240, 89, 34),
+            primary: const Color.fromARGB(255, 240, 89, 34),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10.0),
             ),
