@@ -14,16 +14,15 @@ class _CountryListState extends State<CountryList> {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: deviceWidth / 12),
-      child: Container(
-        // color:Colors.red,
+      padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
+      child: SizedBox(
         height: 120,
         width: deviceWidth,
         child: ListView.builder(
           itemCount: countrys.length,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => Container(
-            width:  deviceWidth / 4.8 ,
+            width:  deviceWidth / 4.6 ,
             margin: const EdgeInsets.symmetric(vertical: 10),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

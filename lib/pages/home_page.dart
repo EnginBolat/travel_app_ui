@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app_ui/widget/country_list.dart';
+import 'package:travel_app_ui/widget/our_properties.dart';
+import 'package:travel_app_ui/widget/popular_places.dart';
 import '../widget/bottom_navigation_bar.dart';
 import '../widget/search_area.dart';
 import '../widget/top_bar.dart';
@@ -26,7 +28,7 @@ class _HomePageState extends State<HomePage> {
       // ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical:50),
+          padding: const EdgeInsets.symmetric(vertical: 50),
           child: Column(
             children: const <Widget>[
               TopBar(),
@@ -38,6 +40,11 @@ class _HomePageState extends State<HomePage> {
                 height: 10,
               ),
               CountryList(),
+              SizedBox(
+                height: 30,
+              ),
+              OurProperties(),
+              PopularPlaces(),
             ],
           ),
         ),

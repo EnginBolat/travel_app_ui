@@ -12,7 +12,7 @@ class _TopBarState extends State<TopBar> {
   Widget build(BuildContext context) {
     var deviceWidth = MediaQuery.of(context).size.width;
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: deviceWidth / 12),
+      padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

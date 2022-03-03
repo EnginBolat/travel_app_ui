@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: 15,
+              height: 60,
             ),
             const GetStartedButton(),
           ],

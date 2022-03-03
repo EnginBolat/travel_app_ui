@@ -14,7 +14,7 @@ class _SearchAreaState extends State<SearchArea> {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: deviceWidth / 12),
+          padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
           child: Row(
             children: const [
               Text(
@@ -28,11 +28,11 @@ class _SearchAreaState extends State<SearchArea> {
           height: 10.0,
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: deviceWidth / 12),
+          padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
           child: Row(
             children: [
               SizedBox(
-                width: deviceWidth / 1.46,
+                width: deviceWidth / 1.4,
                 child: TextField(
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(vertical: 10),
