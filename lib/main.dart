@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app_ui/models/swip_text.dart';
-import 'package:travel_app_ui/widget/get_started_button.dart';
 import 'package:travel_app_ui/widget/home_screen.dart';
-import 'package:travel_app_ui/widget/home_screen_alternetive.dart';
 
 void main() {
   runApp(const MyApp());
