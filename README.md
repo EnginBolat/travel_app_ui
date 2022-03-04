@@ -1,16 +1,32 @@
-# travel_app_ui
+# Flutter - Travel App UI 
 
-A new Flutter project.
+Travel App UI I made with Flutter.
 
-## Getting Started
+Design:https://www.figma.com/community/file/1071010102918605864
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Run Locally
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Clone the project
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+  git clone https://github.com/EnginBolat/travel_app_ui.git
+```
+
+Go to the project directory
+
+```bash
+  cd travel_app_ui
+```
+
+Install dependencies
+
+```bash
+  flutter pub get
+```
+
+Run App
+
+```bash
+  flutter run
+```
