@@ -2,7 +2,7 @@
 
 Travel App UI I made with Flutter.
 
-Design:https://www.figma.com/community/file/1071010102918605864
+[Design](https://www.figma.com/community/file/1071010102918605864)
 
 
 ## Run Locally
