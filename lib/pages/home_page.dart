@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app_ui/widget/country_list.dart';
-import 'package:travel_app_ui/widget/our_properties.dart';
-import 'package:travel_app_ui/widget/popular_places.dart';
-import '../widget/bottom_navigation_bar.dart';
-import '../widget/search_area.dart';
-import '../widget/top_bar.dart';
+import 'package:travel_app_ui/widget/home_page/bottom_navigation_bar.dart';
+import 'package:travel_app_ui/widget/home_page/country_list.dart';
+import 'package:travel_app_ui/widget/home_page/our_properties.dart';
+import 'package:travel_app_ui/widget/home_page/popular_places.dart';
+import 'package:travel_app_ui/widget/home_page/search_area.dart';
+import 'package:travel_app_ui/widget/home_page/top_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
               ),
               CountryList(),
               SizedBox(
-                height: 30,
+                height: 10,
               ),
               OurProperties(),
               PopularPlaces(),

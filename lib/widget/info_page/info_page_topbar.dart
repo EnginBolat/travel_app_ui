@@ -34,12 +34,9 @@ class _InfoPageTopBarState extends State<InfoPageTopBar> {
               shape: const CircleBorder(),
             ),
           ),
-          const Text(
+          Text(
             "Details",
-            style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
-                fontFamily: "Gordita"),
+            style: Theme.of(context).textTheme.headline6,
           ),
           SizedBox(
             height: 30,

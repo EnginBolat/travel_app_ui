@@ -19,18 +19,14 @@ class _OurPropertiesState extends State<OurProperties> {
           padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children:  [
               Text(
                 "Our Properties",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                    fontFamily: "Gordita"),
+                style: Theme.of(context).textTheme.headline6,
               ),
               Text(
                 "View All",
-                style: TextStyle(
-                    fontSize: 16, fontFamily: "Gordita", color: Colors.orange),
+                style: Theme.of(context).textTheme.bodyText1,
               ),
             ],
           ),
@@ -87,19 +83,13 @@ class _OurPropertiesState extends State<OurProperties> {
                                       children: [
                                         Text(
                                           hotels[index].name,
-                                          style: const TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 18,
-                                              fontFamily: "Gordita"),
+                                          style:Theme.of(context).textTheme.headline6,
                                         ),
                                         const SizedBox(
                                           height: 5,
                                         ),
                                         Text("📌 " + hotels[index].location,
-                                            style: const TextStyle(
-                                                color: Colors.grey,
-                                                fontSize: 16,
-                                                fontFamily: "Gordita")),
+                                            style: Theme.of(context).textTheme.subtitle2),
                                       ],
                                     ),
                                   ],

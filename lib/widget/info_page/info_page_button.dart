@@ -21,12 +21,9 @@ class _InfoButtonsState extends State<InfoButtons> {
             width: 85,
             child: ElevatedButton(
               onPressed: () {},
-              child: const Text(
+              child: Text(
                 "Detail",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                ),
+                style: Theme.of(context).textTheme.headline2,
               ),
               style: ElevatedButton.styleFrom(
                 elevation: 10,
@@ -46,11 +43,9 @@ class _InfoButtonsState extends State<InfoButtons> {
             width: 85,
             child: ElevatedButton(
               onPressed: () {},
-              child: const Text(
+              child: Text(
                 "Review",
-                style: TextStyle(
-                  fontSize: 16,
-                ),
+                style: Theme.of(context).textTheme.headline1,
               ),
               style: ElevatedButton.styleFrom(
                 elevation: 10,

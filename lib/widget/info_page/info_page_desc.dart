@@ -23,12 +23,7 @@ class _InfoDescState extends State<InfoDesc> {
         child: hotels[widget.indexId].desc.length > 200
             ? Text(
                 hotels[widget.indexId].desc.substring(0,240)+" Read More...",
-                style: const TextStyle(
-                  fontSize: 16,
-                  color: Colors.grey,
-                  fontFamily: "Gordita",
-                  height: 1.2,
-                ),
+                style: Theme.of(context).textTheme.subtitle2,
               )
             : Text(
                 hotels[widget.indexId].desc,

@@ -38,16 +38,11 @@ class _InfoPageImageState extends State<InfoPageImage> {
               children: [
                 Text(
                   hotels[widget.indexId].name,
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                      fontFamily: "Gordita",
-                      color: Colors.white),
+                  style: Theme.of(context).textTheme.headline4,
                 ),
                 Text(
                   "📌 " + hotels[widget.indexId].location,
-                  style: const TextStyle(
-                      color: Colors.white, fontSize: 20, fontFamily: "Gordita"),
+                  style: Theme.of(context).textTheme.headline3,
                 ),
               ],
             ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app_ui/models/swip_text.dart';
-
-import 'get_started_button.dart';
+import 'package:travel_app_ui/widget/start_page/get_started_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -29,12 +28,9 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: 40,
               ),
-              const Text(
+              Text(
                 "Discover a Hotel & Resort to Book a Suitable Room",
-                style: TextStyle(
-                    fontSize: 24,
-                    fontFamily: "Gordita",
-                    fontWeight: FontWeight.w600),
+                 style: Theme.of(context).textTheme.headline5,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
@@ -42,8 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Text(
                 swipText[index],
-                style: const TextStyle(
-                    fontSize: 14, fontFamily: "Gordita", height: 1.5),
+                style: Theme.of(context).textTheme.bodyText2,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
@@ -51,12 +46,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               index == 2
                   ? const GetStartedButton()
-                  : const Text(
+                  : Text(
                       "Swipe!",
-                      style: TextStyle(
-                          fontSize: 24,
-                          fontFamily: "Gordita",
-                          fontWeight: FontWeight.w600),
+                      style: Theme.of(context).textTheme.headline5,
                     )
             ],
           ),

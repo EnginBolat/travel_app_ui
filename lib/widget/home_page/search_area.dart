@@ -16,10 +16,10 @@ class _SearchAreaState extends State<SearchArea> {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
           child: Row(
-            children: const [
+            children: [
               Text(
                 "Find Your Stay",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.headline5,
               )
             ],
           ),

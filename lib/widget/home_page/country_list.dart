@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/country.dart';
+import 'package:travel_app_ui/models/country.dart';
 
 class CountryList extends StatefulWidget {
   const CountryList({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class _CountryListState extends State<CountryList> {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
       child: SizedBox(
-        height: 120,
+        height: 130,
         width: deviceWidth,
         child: ListView.builder(
           itemCount: countrys.length,
@@ -47,11 +47,7 @@ class _CountryListState extends State<CountryList> {
                   children: [
                     Text(
                       countrys[index].name,
-                      style: const TextStyle(
-                          fontSize: 18,
-                          fontFamily: "Gordita",
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromRGBO(99, 99, 99, 11)),
+                      style: Theme.of(context).textTheme.subtitle1,
                       textAlign: TextAlign.center,
                     ),
                   ],

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../models/country.dart';
-import '../../models/hotel.dart';
-
 class MiniPhotos extends StatefulWidget {
   const MiniPhotos({Key? key}) : super(key: key);
 

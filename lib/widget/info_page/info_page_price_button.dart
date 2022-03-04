@@ -13,8 +13,6 @@ class InfoPayment extends StatefulWidget {
 }
 
 class _InfoPaymentState extends State<InfoPayment> {
-
-
   @override
   Widget build(BuildContext context) {
     var deviceWidth = MediaQuery.of(context).size.width;
@@ -22,9 +20,10 @@ class _InfoPaymentState extends State<InfoPayment> {
       padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
       child: Row(
         children: [
-          Text("\$ ${hotels[widget.indexId].price}/Person",
-              style:
-                  const TextStyle(fontSize: 24, fontWeight: FontWeight.w600)),
+          Text(
+            "\$ ${hotels[widget.indexId].price}/Person",
+            style: Theme.of(context).textTheme.headline5,
+          ),
           const SizedBox(
             width: 20,
           ),
@@ -35,12 +34,9 @@ class _InfoPaymentState extends State<InfoPayment> {
               textDirection: TextDirection.rtl,
               child: ElevatedButton.icon(
                 onPressed: () {},
-                label: const Text(
+                label: Text(
                   "Continue",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
+                  style: Theme.of(context).textTheme.button,
                 ),
                 icon: const Icon(
                   FontAwesomeIcons.arrowRight,
