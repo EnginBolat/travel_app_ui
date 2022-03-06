@@ -21,7 +21,11 @@ class _InfoPageImageState extends State<InfoPageImage> {
       width: 360,
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage(hotels[widget.indexId].iUrl), fit: BoxFit.fill),
+          image: AssetImage(
+            hotels[widget.indexId].iUrl,
+          ),
+          fit: BoxFit.fill,
+        ),
         borderRadius: BorderRadius.circular(30),
       ),
       child: Column(

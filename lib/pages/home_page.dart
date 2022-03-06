@@ -44,6 +44,9 @@ class _HomePageState extends State<HomePage> {
                 height: 10,
               ),
               OurProperties(),
+              SizedBox(
+                height: 30,
+              ),
               PopularPlaces(),
             ],
           ),

@@ -19,7 +19,7 @@ class _OurPropertiesState extends State<OurProperties> {
           padding: EdgeInsets.symmetric(horizontal: deviceWidth / 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children:  [
+            children: [
               Text(
                 "Our Properties",
                 style: Theme.of(context).textTheme.headline6,
@@ -35,7 +35,7 @@ class _OurPropertiesState extends State<OurProperties> {
           height: 10,
         ),
         SizedBox(
-          height: 300,
+          height: 250,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: hotels.length,
@@ -48,7 +48,9 @@ class _OurPropertiesState extends State<OurProperties> {
                       onTap: () => Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => InformationPage(indexId: index,)),
+                            builder: (context) => InformationPage(
+                                  indexId: index,
+                                )),
                       ),
                       child: SizedBox(
                         width: 300,
@@ -72,7 +74,7 @@ class _OurPropertiesState extends State<OurProperties> {
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 20.0),
                                 child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.end,
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Column(
@@ -83,14 +85,50 @@ class _OurPropertiesState extends State<OurProperties> {
                                       children: [
                                         Text(
                                           hotels[index].name,
-                                          style:Theme.of(context).textTheme.headline6,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headline6,
                                         ),
                                         const SizedBox(
                                           height: 5,
                                         ),
                                         Text("📌 " + hotels[index].location,
-                                            style: Theme.of(context).textTheme.subtitle2),
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .subtitle2),
                                       ],
+                                    ),
+                                    const SizedBox(
+                                      width: 65,
+                                    ),
+                                    Container(
+                                      width: 25.0,
+                                      height: 25.0,
+                                      child: IconButton(
+                                        iconSize: 12.0,
+                                        icon: const Icon(Icons.arrow_right,
+                                            color: Colors.white),
+                                        onPressed: () =>
+                                            Navigator.pushReplacement(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  InformationPage(
+                                                    indexId: index,
+                                                  )),
+                                        ),
+                                      ),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        gradient: const LinearGradient(
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                          colors: [
+                                            Color.fromARGB(255, 247, 142, 72),
+                                            Color.fromARGB(255, 240, 89, 34)
+                                          ],
+                                        ),
+                                      ),
                                     ),
                                   ],
                                 ),

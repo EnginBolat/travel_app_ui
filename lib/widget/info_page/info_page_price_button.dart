@@ -29,7 +29,7 @@ class _InfoPaymentState extends State<InfoPayment> {
           ),
           SizedBox(
             height: 50,
-            width: deviceWidth / 2.3,
+            width: deviceWidth / 2.5,
             child: Directionality(
               textDirection: TextDirection.rtl,
               child: ElevatedButton.icon(
